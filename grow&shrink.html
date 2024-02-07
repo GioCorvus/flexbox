@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 1;
+            border: solid 5px;
+            padding: 5px;
+            border-color: rgb(255, 0, 89);
+        }
+        
+        #d1 {
+            background-color: rgb(244, 174, 174);
+            width: 200px;
+            flex-grow: 1;
+        }
+        
+        #d2 {
+            background-color: rgb(243, 243, 187);
+            width: 200px;
+            flex-grow: 5;
+        }
+        
+        #d3 {
+            background-color: rgb(181, 181, 246);
+            width: 200px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="d1">1</div>
+        <div id="d2">2</div>
+        <div id="d3">3</div>
+    </div>
+</body>
+</html>

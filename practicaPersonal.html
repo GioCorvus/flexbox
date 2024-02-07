@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0; 
+            position: absolute;
+            top: 0; 
+            left: 50%; 
+            transform: translateX(-50%); 
+        }
+
+        .container {
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 150px;
+        }
+
+        .caja {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+    <title>Flexbox Practice</title>
+</head>
+<body>
+    <h1>Practica display flex</h1>
+    <!-- en row -->
+    <div class="container" style="flex-direction: row;">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+    </div>
+
+    <!-- no wrap  -->
+    <div class="container" style="flex-wrap: nowrap;">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+    </div>
+
+    <!-- en columna-->
+    <div class="container" style="flex-flow: column wrap;">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+    </div>
+
+    <!-- flex end justificado -->
+    <div class="container" style="justify-content: flex-end;">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+    </div>
+
+    <!-- Flex end alineado -->
+    <div class="container" style="align-cajas: flex-end;">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+    </div>
+
+    <!-- Flex Grow y Flex Shrink -->
+    <div class="container">
+        <div class="caja" style="flex-grow: 2; flex-shrink: 1;">1</div>
+        <div class="caja" style="flex-grow: 1; flex-shrink: 2;">2</div>
+        <div class="caja" style="flex-grow: 1; flex-shrink: 1;">3</div>
+        <div class="caja" style="flex-grow: 3; flex-shrink: 1;">4</div>
+    </div>
+</body>
+</html>
